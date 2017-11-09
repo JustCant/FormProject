@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">        
+        <title>Form Project</title>
+    </head>
+    <body>
+        <h1 id="banner">The Code Review</h1>
+        <div class="wrapper">
+            <header>
+                <h2>Sign up for our newsletter</h2>
+                <span>Get the latest on how your code is doing right in your inbox</span>
+            </header>
+
+            <form>           
+                <div id="contactInfo">
+                    <h2>Contact Information</h2>
+                    <div id="flexDiv">
+                        <label for ="fullName">Full Name: </label>
+                        <input type="text" name="Full Name" id="fullName" placeholder="Required" pattern="[a-zA-Z ]{1,}" title="Must contain only letters" class="text" required>
+                    </div>
+
+                    <div id="flexDiv">
+                        <label for ="emailAddress">Email Address: </label>
+                        <input type="email" name="Email Address" id="emailAddress" placeholder="Required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="text" required>
+                    </div>
+
+                    <div id="flexDiv">
+                        <label for ="phoneNumber">Phone Number: </label>
+                        <input type="text" name="Phone Number" id="phoneNumber" pattern="[0-9]{10}" title="Must include area code. Don't use hyphens or parentheses." class="text">
+                    </div>
+
+                    <div id="flexDiv">
+                        <label for ="streetAddress">Street Address: </label>
+                        <input type="text" name="Street Address" id="streetAddress" class="text">
+                    </div>
+
+                    <div id="flexDiv">
+                        <label for ="city">City: </label>
+                        <input type="text" name="city" id="city" pattern="[A-Za-z]{1,}" title="Must contain only letters" class="text">
+                    </div>
+
+                    <div id="flexDiv">
+                        <label for ="stateSelect">State: </label>
+                        <select id="stateSelect" class="text"></select>
+                    </div>
+
+                    <div id="flexDiv">
+                        <label for ="zipCode">Zip Code: </label>
+                        <input type="text" name="Zip Code" id="zipCode" pattern="[0-9]{5}" title="Zip code should contain 5 digits." class="text">
+                    </div>
+                </div>
+
+                <div id="selectNewsletters">
+                    <h2>Newsletter</h2>
+                    <h3>Select the newsletters you would like to receive.</h3>
+                    <div id="flexDivCheck">
+                        <input type="checkbox" name="HTML News" id="htmlNews">
+                        <label for="htmlNews" class="check">HTML News</label>                    
+                    </div>
+
+                    <div id="flexDivCheck">
+                        <input type="checkbox" name="CSS News" id="cssNews">
+                        <label for="cssNews" class="check">CSS News</label>                    
+                    </div>
+
+                    <div id="flexDivCheck">
+                        <input type="checkbox" name="CSS News" id="jsNews">
+                        <label for="jsNews" class="check">Javascript News</label>
+                    </div>
+                </div>
+
+                <div id="selectFormat">
+                    <h3>Newsletter format</h3>
+
+                    <div id="flexDivRadio">
+                        <input type="radio" name="format" value="HTML" id="html">
+                        <label for ="html" class="radio">HTML</label>                    
+                    </div>
+
+                    <div id="flexDivRadio">
+                        <input type="radio" name="format" value="Plain Text" id="plainText"> 
+                        <label for ="plainText" class="radio">Plain Text</label>                      
+                    </div>
+                </div>     
+
+                <h3>Other topics you'd like to hear about</h3>
+                <textarea rows="5" cols="30"></textarea>
+
+                <button type="submit" id="signUp">Sign Up</button>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
