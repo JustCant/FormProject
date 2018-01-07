@@ -18,9 +18,10 @@ h3 {
     color: black;
 }
 
-#banner {
+.banner {
+    font-family: 'Pacifico', cursive;
     text-align: center;
-    width: 95%;
+    width: 60%;
     color: white;
     background: black;
     margin: auto;
@@ -125,6 +126,21 @@ textarea {
 #html,
 #plainText {
     transform: scale(1.5);
+}
+
+#successHead,
+#successText {
+    width: 60%;
+    text-align: center;
+}
+
+#successText {
+    margin: 20px auto;
+}
+
+#successHead {
+    margin: 50px auto 0 auto;
+    font-size: 2rem;
 }
 
 /**********************  MEDIA QUERIES  *************************/

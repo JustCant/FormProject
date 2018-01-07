@@ -3,18 +3,19 @@
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">        
         <title>Form Project</title>
     </head>
     <body>
-        <h1 id="banner">The Code Review</h1>
+        <h1 class="banner">The Code Review</h1>
         <div class="wrapper">
             <header>
                 <h2>Sign up for our newsletter</h2>
                 <span>Get the latest on how your code is doing right in your inbox</span>
             </header>
 
-            <form>           
+            <form action='success.html' method='GET'>           
                 <div id="contactInfo">
                     <h2>Contact Information</h2>
                     <div id="flexDiv">
@@ -29,7 +30,7 @@
 
                     <div id="flexDiv">
                         <label for ="phoneNumber">Phone Number: </label>
-                        <input type="text" name="Phone Number" id="phoneNumber" pattern="[0-9]{10}" title="Must include area code. Don't use hyphens or parentheses." class="text">
+                        <input type="text" name="Phone Number" id="phoneNumber" pattern="(?/d{3})?-?/d{3}-?/d{4}" title="Must include area code. Don't use hyphens or parentheses." class="text">
                     </div>
 
                     <div id="flexDiv">
